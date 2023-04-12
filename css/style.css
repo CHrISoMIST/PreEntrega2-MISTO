@@ -1,0 +1,242 @@
+html {
+    background-image: url(../media/img/ash.png);
+    background-color: aquamarine;
+    background-size: auto;
+    display: inline-block;
+} 
+@media (max-width: 768px) {body {font-size: 16px;}}
+
+body {
+    min-height: auto;
+    max-width: 80%;
+    background-color: papayawhip; 
+    margin: auto;
+}nav {
+    background-color: rgba(255, 30, 30, 0.904);
+    font-family: OpenSans300;
+}
+h1 {
+    font-family: OpenSans700;
+    font-size: 32px;
+    margin: 0px;
+    padding: 25px;
+    padding-left: 45px;
+}
+
+/* FONTS */
+@font-face {
+    font-family: OpenSans100;
+    src: url(../media/font/Open_Sans/static/OpenSans/OpenSans-Light.ttf);
+    font-family: OpenSans300;
+    src: url(../media/font/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-family: OpenSans400;
+    src: url(../media/font/Open_Sans/static/OpenSans/OpenSans-Medium.ttf);
+    font-family: OpenSans700;
+    src: url(../media/font/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+
+/* BARRA NAVEGACION */
+
+.nav {
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    z-index: 100%;
+    font-family: OpenSans300;
+}
+
+.logo {
+    width: 125px;
+    height: 45px;
+    float: left;
+    margin-left: 5px;
+}
+
+.nav-list {
+    text-align: center;
+    font-family: OpenSans300;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin: 10px;
+    font-family: OpenSans300;
+}
+
+.nav-link {
+    font-size: 22px;
+    color: rgb(240, 248, 255);
+    text-decoration: none;
+    font-family: OpeSans300;
+}
+.nav-link:hover {
+    color: rgba(0, 0, 0, 0.904)
+}
+
+/*  MAIN */
+
+
+
+/* Grilla */
+.cuadricula {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    justify-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'a1 a2'
+    'a1 a3'
+    'a4 a5'
+    'a6 a7'
+    ;
+    gap: 3px;
+    object-fit: cover;
+}
+
+.caja1 {
+    grid-area: a1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja2 {
+    grid-area: a2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caja3 {
+    grid-area: a3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caja4 {
+    grid-area: a4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caja5 {
+    grid-area: a5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caja6 {
+    grid-area: a6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.caja7 {
+    grid-area: a7;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* NOTICIAS */
+.noti {
+    display: grid;
+    padding: 5px;
+    justify-items: start;
+    gap: 3px;
+    object-fit: cover;
+    
+}
+
+.a01 {
+    display: flex;
+    flex-direction: row;
+    background-color: #1ca4a4;
+}
+.a02 {
+    grid-area: a02;
+    background-color: rgba(0, 255, 255, 0.295);
+    align-items: end;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(82, 80, 80);
+    color: rgb(247, 251, 255);
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.subs {
+    font-family: OpenSans400;
+    font-size: 18px;
+    padding-top: 70px;
+    margin-bottom: -40px;
+}
+
+input[type="email"] {
+    font-size: 16px;
+    width: 310px;
+    height: 40px;
+
+}
+
+.btnsub {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 14px;
+    padding: 13px;
+    border-radius: 10px;
+    font-family: OpenSans400;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    box-shadow: rgba(0, 0, 0, 0.57) 5px 5px 15px 5px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+}
+.btnsub:hover {
+    background: #1C6EA4;
+}
+.btnsub:active {
+    background: #144E75;
+}
+
+.redes {
+    width: 35px;
+    height: 35px;
+    margin: 70px 2px 2px 4px;
+    object-fit: cover;
+}
+
+.copy {
+    font-family: OpenSans100;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 3px;
+}
+
+.caja-media {
+    background-color: aquamarine;
+}
+@media screen and (min 
